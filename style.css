@@ -298,3 +298,36 @@ body {
   color: #555;
   margin-top: 25px;
 }
+
+/* お問い合わせページ用の追加スタイル */
+.contact-link {
+  color: #0055a4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-block {
+  margin: 25px 0;
+}
+
+.contact-block h3 {
+  color: #003366;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.contact-form-area {
+  margin-top: 20px;
+}
+
+.contact-note {
+  background: #fff3cd;
+  padding: 10px;
+  border: 1px solid #ffeeba;
+  margin-top: 20px;
+  font-size: 13px;
+}
