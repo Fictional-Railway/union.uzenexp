@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アンケート回答（勤務制度見直し）| 羽前急行労働組合</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-requires-auth="true" data-login-url="../login.html">
+
+  <header id="site-header">
+    <div class="header-inner">
+      <h1>羽前急行労働組合</h1>
+      <p class="subtitle">Uzen Express Railway Labor union</p>
+    </div>
+  </header>
+
+  <div id="wrapper">
+    <aside id="sidebar">
+      <nav>
+        <ul class="side-menu">
+          <li><a href="../members.html">▶ 組合員専用ページへ戻る</a></li>
+          <li><a href="profile.html">▶ 個人情報の変更</a></li>
+          <li><a href="../contact.html">▶ お問い合わせ窓口</a></li>
+        </ul>
+      </nav>
+
+      <div class="info-box">
+        <h3>組合員専用ページ</h3>
+        <p>ログイン中です。</p>
+        <button type="button" id="logout-btn" class="login-btn" data-login-url="../login.html">ログアウト</button>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <section class="content-section">
+        <h2>アンケート回答（勤務制度見直し）</h2>
+        <p>勤務制度の見直しに向けた基礎資料とするため、現場実態に関するアンケートへのご協力をお願いします。</p>
+
+        <div class="form-wrapper contact-form-area">
+          <form id="survey-form">
+            <div class="form-group">
+              <label>所属区所<span class="required">※必須</span></label>
+              <input type="text" name="office" required>
+            </div>
+
+            <div class="form-group">
+              <label>現在の勤務制度について<span class="required">※必須</span></label>
+              <textarea name="currentStatus" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>改善してほしい点<span class="required">※必須</span></label>
+              <textarea name="improvement" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>勤務間インターバル（休息時間）への評価<span class="required">※必須</span></label>
+              <select name="interval" required>
+                <option value="">選択してください</option>
+                <option value="good">十分確保されている</option>
+                <option value="normal">概ね確保されている</option>
+                <option value="bad">不足している</option>
+                <option value="very-bad">大きく不足している</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>その他意見（任意）</label>
+              <textarea name="freeComment" rows="4"></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="submit-btn">アンケートを送信する</button>
+            </div>
+          </form>
+
+          <div class="contact-note">
+            <strong>【回答の取り扱い】</strong><br>
+            回答内容は勤務制度見直し交渉の検討資料として利用し、個人が特定されない形で集計します。
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 羽前急行労働組合 (Uzen Express Workers' Union)</p>
+    <p class="disclaimer">※このサイトは架空鉄道「羽前急行電鉄」の二次創作であり、実在の団体・企業とは一切関係ありません。</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
