@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>組合員ログイン | 羽前急行労働組合</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <h1>羽前急行労働組合</h1>
+      <p class="subtitle">Uzen Express Railway Labor union</p>
+    </div>
+  </header>
+
+  <div id="wrapper">
+    <aside id="sidebar">
+      <nav>
+        <ul class="side-menu">
+          <li><a href="index.html#news">▶ 最新情報・活動報告</a></li>
+          <li><a href="about.html">▶ 組合概要</a></li>
+          <li><a href="contact.html">▶ お問い合わせ窓口</a></li>
+        </ul>
+      </nav>
+
+      <div class="info-box">
+        <h3>組合員専用ページ</h3>
+        <p>※閲覧には機関誌記載のパスワードが必要です。</p>
+        <a class="login-btn" href="login.html">ログイン</a>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <section class="content-section">
+        <h2>組合員専用 ログイン</h2>
+
+        <div class="form-wrapper login-panel">
+          <p>機関誌に記載されたパスワードを入力してください。</p>
+
+          <form id="login-form">
+            <div class="form-group">
+              <label for="login-password">パスワード<span class="required">※必須</span></label>
+              <input id="login-password" type="password" name="password" required>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="submit-btn">ログイン</button>
+            </div>
+          </form>
+
+          <p id="login-error" class="login-error" aria-live="polite"></p>
+          <p class="login-note">※デモ用サイトのため、認証はブラウザ内でのみ動作します。</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 羽前急行労働組合 (Uzen Express Workers' Union)</p>
+    <p class="disclaimer">※このサイトは架空鉄道「羽前急行電鉄」の二次創作であり、実在の団体・企業とは一切関係ありません。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

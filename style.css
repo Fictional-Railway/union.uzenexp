@@ -331,3 +331,32 @@ body {
   margin-top: 20px;
   font-size: 13px;
 }
+
+/* ログインページ・組合員ページ用の追加スタイル */
+.login-panel {
+  max-width: 520px;
+}
+
+.login-error {
+  color: #cc0000;
+  font-weight: bold;
+  margin-top: 14px;
+  min-height: 1.6em;
+}
+
+.login-note {
+  font-size: 13px;
+  color: #555;
+}
+
+.member-card {
+  margin-top: 22px;
+  background: #f9fcff;
+  border: 1px solid #cce0ff;
+  padding: 16px;
+}
+
+.member-card h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
