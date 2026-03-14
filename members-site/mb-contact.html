@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ窓口 | 羽前急行労働組合</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <h1>羽前急行労働組合</h1>
+      <p class="subtitle">Uzen Express Railway Labor union</p>
+    </div>
+  </header>
+
+  <div id="wrapper">
+    <aside id="sidebar">
+      <nav>
+        <ul class="side-menu">
+          <li><a href="../members.html">▶ 組合員専用ページへ戻る</a></li>
+          <li><a href="../contact.html">▶ お問い合わせ窓口</a></li>
+          <li><a href="../index.html#news">▶ 最新情報・活動報告</a></li>
+        </ul>
+      </nav>
+
+      <div class="info-box">
+        <h3>組合員専用ページ</h3>
+        <p>ログイン中です。</p>
+        <button type="button" id="logout-btn" class="login-btn" data-login-url="../login.html">ログアウト</button>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <section class="content-section">
+        <h2>組合員向け ご意見・お問い合わせ窓口</h2>
+
+        <p>職場環境、安全対策、勤務制度、ハラスメント相談など、組合活動に関するご意見・ご相談を受け付けています。</p>
+        <p>匿名での相談も可能です。必要に応じて執行部より折り返し連絡いたします。</p>
+
+        <div class="contact-block">
+          <h3>受付内容</h3>
+          <ul class="about-list">
+            <li>勤務シフト・拘束時間・休養時間に関する相談</li>
+            <li>設備不具合・ヒヤリハット等の安全に関する報告</li>
+            <li>職場での各種ハラスメントに関する相談</li>
+            <li>賃金・手当・福利厚生に関する要望</li>
+          </ul>
+        </div>
+
+        <div class="form-wrapper contact-form-area">
+          <form id="contact-form">
+            <div class="form-group">
+              <label>所属（例：山形運転所など）<span class="required">※必須</span></label>
+              <input type="text" name="department" required>
+            </div>
+            <div class="form-group">
+              <label>氏名（匿名の場合は「匿名」と入力）<span class="required">※必須</span></label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label>ご相談・お問い合わせ内容<span class="required">※必須</span></label>
+              <textarea name="message" rows="6" required></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="submit-btn">送信する</button>
+            </div>
+          </form>
+
+          <div class="contact-note">
+            <strong>【プライバシー保護について】</strong><br>
+            お送りいただいた内容は、組合執行部のみが閲覧します。会社側（人事・管理部門）へ個人の特定につながる情報が漏れることは一切ありません。
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 羽前急行労働組合 (Uzen Express Workers' Union)</p>
+    <p class="disclaimer">※このサイトは架空鉄道「羽前急行電鉄」の二次創作であり、実在の団体・企業とは一切関係ありません。</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
