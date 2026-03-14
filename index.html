@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>羽前急行労働組合</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <h1>羽前急行労働組合</h1>
+      <p class="subtitle">Uzen Express Railway Labor union
+      </p>
+    </div>
+  </header>
+
+  <div id="wrapper">
+    <aside id="sidebar">
+      <nav>
+        <ul class="side-menu">
+          <li><a href="#news">▶ 最新情報・活動報告</a></li>
+          <li><a href="#about">▶ 組合概要</a></li>
+          <li><a href="#contact">▶ お問い合わせ窓口</a></li>
+        </ul>
+      </nav>
+      
+      <div class="info-box">
+        <h3>組合員専用ページ</h3>
+        <p>※閲覧には機関誌記載のパスワードが必要です。</p>
+        <button class="login-btn" onclick="alert('ダミー機能です')">ログイン</button>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      
+      <section id="news" class="content-section">
+        <h2>最新情報・活動報告</h2>
+        <table class="news-table">
+          <tr>
+            <th class="date">2026.03.14</th>
+            <td class="tag"><span class="badge blue">春闘</span></td>
+            <td>【26春闘】第2回 団体交渉の結果について（ベースアップ要求）</td>
+          </tr>
+          <tr>
+            <th class="date">2026.02.28</th>
+            <td class="tag"><span class="badge red">安全対策</span></td>
+            <td>最高時速160km/h運転における、志津信号場〜あさひ月山湖間の設備点検強化の申し入れ</td>
+          </tr>
+          <tr>
+            <th class="date">2026.01.15</th>
+            <td class="tag"><span class="badge blue">交流活動</span></td>
+            <td>JNR仙台局労働組合（仙鉄労）との合同安全集会を開催しました</td>
+          </tr>
+          <tr>
+            <th class="date">2025.12.01</th>
+            <td class="tag"><span class="badge gray">お知らせ</span></td>
+            <td>「GREEN EXPRESS」乗務員向け、冬期の月山おろし対策防寒着の支給が決定</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="about" class="content-section">
+        <h2>組合概要</h2>
+        <p>羽前急行労働組合（羽前労）は、山形〜酒田を結ぶ「羽前急行電鉄」および高速・夜行バス及び路線バスを運行する「羽前急行バス」で働く労働者で組織されています。</p>
+        <p>1991年の月山線全線開通以来、私たちは単線での高速運行という特殊な環境下において、乗客の皆様の安全と、組合員の心身の健康を守るため、会社側との協議を重ねてまいりました。</p>
+        <p>今後も、JNR線直通乗務員との連携を深め、より良い労働環境の構築を目指します。</p>
+      </section>
+
+      <section id="contact" class="content-section">
+        <h2>組合員向け ご意見・お問い合わせ窓口</h2>
+        <div class="form-wrapper">
+          <form id="contact-form">
+            <div class="form-group">
+              <label>所属（例：山形運転所など）<span class="required">※必須</span></label>
+              <input type="text" name="department" required>
+            </div>
+            <div class="form-group">
+              <label>氏名<span class="required">※必須</span></label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label>ご相談・お問い合わせ内容<span class="required">※必須</span></label>
+              <textarea name="message" rows="6" required></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="submit-btn">送信する</button>
+            </div>
+          </form>
+
+          <div style="margin-bottom: 30px;"></div>
+          <div class="safety-note" style="background:#fff3cd; padding:10px; border:1px solid #ffeeba; margin-bottom:15px; font-size:13px;">
+  <strong>【プライバシー保護について】</strong><br>
+  お送りいただいた内容は、組合執行部のみが閲覧します。会社側（人事・管理部門）へ個人の特定につながる情報が漏れることは一切ありません。匿名でのご相談も受け付けております。
+</div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 羽前急行労働組合 (Uzen Express Workers' Union)</p>
+    <p class="disclaimer">※このサイトは架空鉄道「羽前急行電鉄」の二次創作であり、実在の団体・企業とは一切関係ありません。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

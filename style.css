@@ -1,0 +1,244 @@
+/* 全体のリセットと基本設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Meiryo", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #e6f0fa; /* 薄い青背景 */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+#site-header {
+  background-color: #003366; /* 濃いネイビー */
+  color: #fff;
+  border-bottom: 5px solid #0055a4; /* 明るめの青のライン */
+  padding: 20px 0;
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#site-header h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #b3d4ff;
+  margin-top: 5px;
+}
+
+/* 全体のレイアウト（左メニューと右コンテンツ） */
+#wrapper {
+  display: flex;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #cce0ff;
+  box-shadow: 0 0 10px rgba(0, 51, 102, 0.1);
+}
+
+/* 左サイドバー */
+#sidebar {
+  width: 250px;
+  background-color: #f2f8ff;
+  border-right: 1px solid #cce0ff;
+  padding: 20px;
+}
+
+.side-menu {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.side-menu li {
+  margin-bottom: 10px;
+}
+
+.side-menu a {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  color: #003366;
+  text-decoration: none;
+  border: 1px solid #b3d4ff;
+  font-weight: bold;
+}
+
+.side-menu a:hover {
+  background-color: #0055a4;
+  color: #fff;
+}
+
+.info-box {
+  background-color: #fff;
+  border: 2px solid #003366;
+  padding: 15px;
+  text-align: center;
+}
+
+.info-box h3 {
+  font-size: 14px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.login-btn {
+  background-color: #0055a4;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 右メインコンテンツ */
+#main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.content-section {
+  margin-bottom: 50px;
+}
+
+/* 見出し（青色の二重下線などでお堅い雰囲気に） */
+.content-section h2 {
+  color: #003366;
+  font-size: 20px;
+  border-bottom: 3px double #0055a4;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* ニュースのテーブル（昔ながらの表組み） */
+.news-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.news-table th, .news-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e6f0fa;
+}
+
+.news-table .date {
+  width: 100px;
+  text-align: left;
+  color: #555;
+}
+
+.news-table .tag {
+  width: 80px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.badge.blue { background-color: #0055a4; }
+.badge.red { background-color: #cc0000; }
+.badge.gray { background-color: #666; }
+
+/* フォーム */
+.form-wrapper {
+  background-color: #f9fcff;
+  border: 1px solid #cce0ff;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-submit {
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0055a4;
+}
+
+/* フッター */
+#site-footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #b3d4ff;
+  margin-top: 10px;
+}
+
+/* スマホ対応（簡易） */
+@media (max-width: 768px) {
+  #wrapper {
+    flex-direction: column;
+  }
+  #sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #cce0ff;
+  }
+  .news-table th, .news-table td {
+    display: block;
+    width: 100%;
+  }
+  .news-table tr {
+    border-bottom: 1px solid #ccc;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
