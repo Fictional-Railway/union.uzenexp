@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人情報の変更 | 羽前急行労働組合</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-requires-auth="true" data-login-url="../login.html">
+
+  <header id="site-header">
+    <div class="header-inner">
+      <h1>羽前急行労働組合</h1>
+      <p class="subtitle">Uzen Express Railway Labor union</p>
+    </div>
+  </header>
+
+  <div id="wrapper">
+    <aside id="sidebar">
+      <nav>
+        <ul class="side-menu">
+          <li><a href="../members.html">▶ 組合員専用ページへ戻る</a></li>
+          <li><a href="../contact.html">▶ お問い合わせ窓口</a></li>
+          <li><a href="../index.html#news">▶ 最新情報・活動報告</a></li>
+        </ul>
+      </nav>
+
+      <div class="info-box">
+        <h3>組合員専用ページ</h3>
+        <p>ログイン中です。</p>
+        <button type="button" id="logout-btn" class="login-btn" data-login-url="../login.html">ログアウト</button>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <section class="content-section">
+        <h2>個人情報の変更（住所・連絡先・所属）</h2>
+        <p>登録されている連絡先情報の更新申請ができます。入力内容は執行部で確認後に反映されます。</p>
+
+        <div class="form-wrapper contact-form-area">
+          <form id="profile-form">
+            <div class="form-group">
+              <label>組合員番号<span class="required">※必須</span></label>
+              <input type="text" name="memberId" required>
+            </div>
+            <div class="form-group">
+              <label>氏名<span class="required">※必須</span></label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label>新しい住所<span class="required">※必須</span></label>
+              <textarea name="address" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+              <label>新しい連絡先（電話番号）<span class="required">※必須</span></label>
+              <input type="text" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label>新しい所属（例：山形運転所）<span class="required">※必須</span></label>
+              <input type="text" name="department" required>
+            </div>
+            <div class="form-group">
+              <label>備考（任意）</label>
+              <textarea name="note" rows="3"></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="submit-btn">変更申請を送信する</button>
+            </div>
+          </form>
+
+          <div class="contact-note">
+            <strong>【取扱いについて】</strong><br>
+            申請内容は組合の個人情報保護方針に基づいて管理され、必要な確認のため執行部のみが閲覧します。
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 羽前急行労働組合 (Uzen Express Workers' Union)</p>
+    <p class="disclaimer">※このサイトは架空鉄道「羽前急行電鉄」の二次創作であり、実在の団体・企業とは一切関係ありません。</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
