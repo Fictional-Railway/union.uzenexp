@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>組合費の確認 | 羽前急行労働組合</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-requires-auth="true" data-login-url="../login.html">
+
+  <header id="site-header">
+    <div class="header-inner">
+      <h1>羽前急行労働組合</h1>
+      <p class="subtitle">Uzen Express Railway Labor union</p>
+    </div>
+  </header>
+
+  <div id="wrapper">
+    <aside id="sidebar">
+      <nav>
+        <ul class="side-menu">
+          <li><a href="../members.html">▶ 組合員専用ページへ戻る</a></li>
+          <li><a href="profile.html">▶ 個人情報の変更</a></li>
+          <li><a href="survey.html">▶ アンケート回答（勤務制度見直し）</a></li>
+        </ul>
+      </nav>
+
+      <div class="info-box">
+        <h3>組合員専用ページ</h3>
+        <p>ログイン中です。</p>
+        <button type="button" id="logout-btn" class="login-btn" data-login-url="../login.html">ログアウト</button>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <section class="content-section">
+        <h2>組合費の確認（今月分・累計）</h2>
+        <p>毎月の組合費控除状況を確認できます。</p>
+
+        <div class="member-card">
+          <h3>現在の控除情報</h3>
+          <table class="about-table">
+            <tr>
+              <th>組合員番号</th>
+            <td id="member-id"></td>
+            <script>
+                function getMemberId() {
+                    const key = 'memberId';
+                    let id = localStorage.getItem(key);
+                    if (!id) {
+                        id = String(Math.floor(10000 + Math.random() * 90000));
+                        localStorage.setItem(key, id);
+                    }
+                    return id;
+                }
+                document.addEventListener('DOMContentLoaded', function() {
+                    const memberId = getMemberId();
+                    document.getElementById('member-id').textContent = 'UZE-' + memberId;
+                });
+            </script>
+            </tr>
+            <tr>
+              <th>所属</th>
+              <td>山形運転所</td>
+            </tr>
+            <tr>
+              <th>今月分</th>
+              <td>3,200円（2026年3月）</td>
+            </tr>
+            <tr>
+              <th>年度累計</th>
+              <td>38,400円（2025年4月〜2026年3月）</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="member-card">
+          <h3>月別内訳（直近6か月）</h3>
+          <table class="about-table">
+            <tr>
+              <th>対象月</th>
+              <th>控除額</th>
+              <th>備考</th>
+            </tr>
+            <tr>
+              <td>2026年3月</td>
+              <td>3,200円</td>
+              <td>通常控除</td>
+            </tr>
+            <tr>
+              <td>2026年2月</td>
+              <td>3,200円</td>
+              <td>通常控除</td>
+            </tr>
+            <tr>
+              <td>2026年1月</td>
+              <td>3,200円</td>
+              <td>通常控除</td>
+            </tr>
+            <tr>
+              <td>2025年12月</td>
+              <td>3,200円</td>
+              <td>通常控除</td>
+            </tr>
+            <tr>
+              <td>2025年11月</td>
+              <td>3,200円</td>
+              <td>通常控除</td>
+            </tr>
+            <tr>
+              <td>2025年10月</td>
+              <td>3,200円</td>
+              <td>通常控除</td>
+            </tr>
+          </table>
+        </div>
+
+        <p class="about-note">※金額に不明点がある場合は、相談フォームから執行部へお問い合わせください。</p>
+      </section>
+    </main>
+  </div>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 羽前急行労働組合 (Uzen Express Workers' Union)</p>
+    <p class="disclaimer">※このサイトは架空鉄道「羽前急行電鉄」の二次創作であり、実在の団体・企業とは一切関係ありません。</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -98,12 +98,18 @@ body {
 }
 
 .login-btn {
+  display: inline-block;
   background-color: #0055a4;
   color: #fff;
   border: none;
   padding: 8px 15px;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.login-btn:hover {
+  background-color: #003f7a;
 }
 
 /* 右メインコンテンツ */
